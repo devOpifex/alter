@@ -1,5 +1,5 @@
 Package: alter
-Title: Alter Data Using 'Antv' Dataset
+Title: Alter Data Using 'AntV' Dataset
 Version: 1.0.0.9000
 Authors@R: 
   c(
@@ -11,7 +11,7 @@ Authors@R:
            role = c("cph"),
            email = "john@opifex.org")
   )
-Description: Transform and reshape data using 'Antv' dataset.
+Description: Transform and reshape data using 'AntV' dataset.
 License: AGPL (>= 3)
 Encoding: UTF-8
 LazyData: true
