@@ -4,3 +4,5 @@
 ^in\.js$
 ^makefile$
 ^node_modules$
+^README\.Rmd$
+^\.travis\.yml$
