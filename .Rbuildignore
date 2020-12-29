@@ -1,0 +1,6 @@
+^LICENSE\.md$
+^package\.json$
+^package-lock\.json$
+^in\.js$
+^makefile$
+^node_modules$

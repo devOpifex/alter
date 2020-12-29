@@ -1,0 +1,21 @@
+Package: alter
+Title: Alter Data Using 'Antv' Dataset
+Version: 1.0.0.9000
+Authors@R: 
+  c(
+    person(given = "John",
+           family = "Coene",
+           role = c("aut", "cre"),
+           email = "jcoenep@gmail.com"),
+    person(family = "Opifex",
+           role = c("cph"),
+           email = "john@opifex.org")
+  )
+Description: Transform and reshape data using 'Antv' dataset.
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9000
+Imports: 
+    V8
