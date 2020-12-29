@@ -17,6 +17,8 @@ remotes::install_github("devOpifex/alter")
 
 ## Examples
 
+Using the `alter` function.
+
 ```r
 library(alter)
 
@@ -32,7 +34,21 @@ alter(
  cars, 
  type = "aggregate", 
  fields = c("speed", "dist"), 
- operations = c("mean", "mean"), 
- as = c("x", "y")
+ operations = c("mean", "sum"), 
+ as = c("meanSpeed", "sumDist")
 ) 
+```
+
+Using the `Alter` class.
+
+```r
+Alter$new(cars)$
+  source()$
+  transform(
+    sizeByCount = TRUE,
+    type = "bin.rectangle", 
+    fields = c("speed", "dist"), 
+    bins = c(10, 5)
+  )$
+  getRows()
 ```

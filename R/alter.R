@@ -20,6 +20,8 @@
 #'  as = c("x", "y")
 #' ) 
 #' 
+#' @name functional
+#' 
 #' @export
 alter <- function(data, ..., dataset = NULL, source = NULL, .rows = TRUE, .return = NULL){
   if(missing(data))
