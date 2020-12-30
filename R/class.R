@@ -79,7 +79,8 @@ Alter <- R6::R6Class(
       )
       ctx$eval(
         sprintf(
-          "%s = dv.source(data, %src);",
+          "%s = %s.source(data, %src);",
+          private$name,
           private$name,
           private$name
         )

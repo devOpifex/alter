@@ -1,3 +1,7 @@
+# alter 2.0.1.9000
+
+- Fixed `source` method in `Alter` class.
+
 # alter 2.0.0
 
 * Added R6 class: `Alter`.
