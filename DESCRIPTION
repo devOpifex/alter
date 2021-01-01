@@ -18,5 +18,8 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1.9000
 Imports: 
-    V8,
-    R6
+  V8,
+  R6,
+  htmltools
+Suggests:
+  shiny

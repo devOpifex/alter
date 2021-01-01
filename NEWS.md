@@ -1,6 +1,7 @@
 # alter 2.0.1.9000
 
 - Fixed `source` method in `Alter` class.
+- Added `dataset_dependency` to import dataset
 
 # alter 2.0.0
 

@@ -6,3 +6,4 @@
 ^node_modules$
 ^README\.Rmd$
 ^\.travis\.yml$
+^test\.R$

@@ -2,3 +2,5 @@
 
 export(Alter)
 export(alter)
+export(dataset_dependency)
+importFrom(htmltools,htmlDependency)
