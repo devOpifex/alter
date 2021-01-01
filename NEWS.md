@@ -2,6 +2,7 @@
 
 - Fixed `source` method in `Alter` class.
 - Added `dataset_dependency` to import dataset
+- Added `get` method on class
 
 # alter 2.0.0
 

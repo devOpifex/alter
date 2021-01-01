@@ -25,6 +25,7 @@ Alter$new(cars)$
 \item \href{#method-transform}{\code{Alter$transform()}}
 \item \href{#method-getRows}{\code{Alter$getRows()}}
 \item \href{#method-getView}{\code{Alter$getView()}}
+\item \href{#method-get}{\code{Alter$get()}}
 \item \href{#method-finalize}{\code{Alter$finalize()}}
 \item \href{#method-print}{\code{Alter$print()}}
 \item \href{#method-clone}{\code{Alter$clone()}}
@@ -131,6 +132,29 @@ the global context on exit.}
 }
 \subsection{Details}{
 Get the view object
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get"></a>}}
+\if{latex}{\out{\hypertarget{method-get}{}}}
+\subsection{Method \code{get()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Alter$get(what, clean = TRUE)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{what}}{What to retrieve, e.g.: \code{rows} or \code{edges}.}
+
+\item{\code{clean}}{Whether to remove the view created from
+the global context on exit.}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Details}{
+Get from the view
 }
 
 }

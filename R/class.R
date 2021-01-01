@@ -140,6 +140,24 @@ Alter <- R6::R6Class(
 
       ctx$get(sprintf("%s", private$name))
     },
+#' @details Get from the view
+#' @param what What to retrieve, e.g.: `rows` or `edges`.
+#' @param clean Whether to remove the view created from 
+#' the global context on exit.
+    get = function(what, clean = TRUE){
+      if(missing(what))
+        stop("Missing `what`", call. = FALSE)
+
+      if(clean){
+        on.exit(
+          ctx$eval(
+            sprintf("%s = null;", private$name)
+          )
+        )
+      }
+
+      ctx$get(sprintf("%s.%s", private$name, what))
+    },
 #' @details Clean up
     finalize = function() {
       ctx$eval(
