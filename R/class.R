@@ -144,7 +144,8 @@ Alter <- R6::R6Class(
 #' @param what What to retrieve, e.g.: `rows` or `edges`.
 #' @param clean Whether to remove the view created from 
 #' the global context on exit.
-    get = function(what, clean = TRUE){
+#' @param ... Arguments to pass to the deserialiser.
+    get = function(what, ..., clean = TRUE){
       if(missing(what))
         stop("Missing `what`", call. = FALSE)
 
@@ -156,7 +157,7 @@ Alter <- R6::R6Class(
         )
       }
 
-      ctx$get(sprintf("%s.%s", private$name, what))
+      ctx$get(sprintf("%s.%s", private$name, what), ...)
     },
 #' @details Clean up
     finalize = function() {

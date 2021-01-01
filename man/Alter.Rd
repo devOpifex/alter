@@ -140,13 +140,15 @@ Get the view object
 \if{latex}{\out{\hypertarget{method-get}{}}}
 \subsection{Method \code{get()}}{
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Alter$get(what, clean = TRUE)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Alter$get(what, ..., clean = TRUE)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{what}}{What to retrieve, e.g.: \code{rows} or \code{edges}.}
+
+\item{\code{...}}{Arguments to pass to the deserialiser.}
 
 \item{\code{clean}}{Whether to remove the view created from
 the global context on exit.}
