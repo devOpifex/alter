@@ -60,7 +60,6 @@ Alter <- R6::R6Class(
     source = function(...){
       opts <- list(...)
 
-
       if(!length(opts)){
         ctx$eval(
           sprintf(
@@ -87,11 +86,17 @@ Alter <- R6::R6Class(
         )
       )
 
+      private$sourced <- TRUE
+
       invisible(self)
     },
 #' @details Transform the data
 #' @param ... Options to pass to the `transform` method.
     transform = function(...){
+      
+      if(!private$sourced)
+        self$source()
+
       opts <- list(...)
 
       if(!length(opts))
@@ -174,6 +179,7 @@ Alter <- R6::R6Class(
     }
   ),
   private = list(
+    sourced = FALSE,
     dv = NULL,
     name = "dv",
     generateName = function(){
