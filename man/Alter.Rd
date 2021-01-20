@@ -26,6 +26,7 @@ Alter$new(cars)$
 \item \href{#method-getRows}{\code{Alter$getRows()}}
 \item \href{#method-getView}{\code{Alter$getView()}}
 \item \href{#method-get}{\code{Alter$get()}}
+\item \href{#method-eval}{\code{Alter$eval()}}
 \item \href{#method-finalize}{\code{Alter$finalize()}}
 \item \href{#method-print}{\code{Alter$print()}}
 \item \href{#method-clone}{\code{Alter$clone()}}
@@ -157,6 +158,28 @@ the global context on exit.}
 }
 \subsection{Details}{
 Get from the view
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-eval"></a>}}
+\if{latex}{\out{\hypertarget{method-eval}{}}}
+\subsection{Method \code{eval()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Alter$eval(what, ...)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{what}}{Method to evaluated, e.g.: \code{getAllRows()}.}
+
+\item{\code{...}}{Arguments to pass to the deserialiser.}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Details}{
+Evaluate method on the view
 }
 
 }

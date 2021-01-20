@@ -164,6 +164,22 @@ Alter <- R6::R6Class(
 
       ctx$get(sprintf("%s.%s", private$name, what), ...)
     },
+#' @details Evaluate method on the view
+#' @param what Method to evaluated, e.g.: `getAllRows()`.
+#' @param ... Arguments to pass to the deserialiser.
+    eval = function(what, ...){
+      if(missing(what))
+        stop("Missing `what`", call. = FALSE)
+
+      on.exit(
+        ctx$eval(
+          sprintf("x = null;", private$name)
+        )
+      )
+
+      ctx$eval(sprintf("var x = %s.%s", private$name, what))
+      ctx$get("x", ...)
+    },
 #' @details Clean up
     finalize = function() {
       ctx$eval(
